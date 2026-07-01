@@ -27,10 +27,25 @@ public class Main {
 
 
 
-        BoxPrice a = new BoxPrice(2, 3, 4, 6, 89);
-        BoxPrice b = new BoxPrice(12, 10,99);
+//        BoxPrice a = new BoxPrice(2, 3, 4, 6, 89);
+//        BoxPrice b = new BoxPrice(12, 10,99);
+
+
+        Box box = new Box();
+//        box.greet();
+//        Box.greet(); // always use class for static methods as static don't depend upon objects
+
+
+//        Box box2 = new BoxWeight();
+//        box2.greet(); // we can inherit but can't override static methods
 
         
+
+
+
+
+
+
 
 
 

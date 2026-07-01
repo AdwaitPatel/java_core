@@ -5,6 +5,14 @@ public class Box {
     int w;
     int h;
 
+    public int getL() {
+        return l;
+    }
+
+    static void greet() {
+        System.out.println("Hello from Box class!!");
+    }
+
     Box() {
         this.l = -1;
         this.w = -1;
