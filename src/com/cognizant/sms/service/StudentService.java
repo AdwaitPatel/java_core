@@ -1,12 +1,13 @@
 package com.cognizant.sms.service;
 
 import com.cognizant.sms.model.Student;
-import com.cognizant.sms.repository.StudentRepository;
+import com.cognizant.sms.repository.StudentDBRepository;
 import java.util.ArrayList;
 
 // this class is for validations and business logics
 public class StudentService {
-    private StudentRepository repository = new StudentRepository();
+
+    private StudentDBRepository repository = new StudentDBRepository();
 
     // add student validations
     public boolean addStudent(String name, String email, int age) {
@@ -46,8 +47,7 @@ public class StudentService {
             return false;
         }
 
-        repository.updateStudent(student);
-        return true;
+        return repository.updateStudent(student);
     }
 
     // delete student

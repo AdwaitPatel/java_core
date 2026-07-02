@@ -6,7 +6,9 @@ import com.cognizant.sms.service.StudentService;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-// this class acts as a UI for interaction with all 3 layers
+import java.sql.*;
+
+// this class acts as a UI for interaction with all 4 layers
 public class Main {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
