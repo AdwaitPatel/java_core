@@ -8,6 +8,10 @@ public class SubClass extends A {
     static void main(String[] args) {
         SubClass obj = new SubClass(21, "adp");
         int n = obj.getNum();
-        System.out.println(n);
+//        System.out.println(n);
+
+        System.out.println(obj instanceof SubClass); // true
+        System.out.println(obj instanceof A); // true
+        System.out.println(obj instanceof Object); // true
     }
 }
